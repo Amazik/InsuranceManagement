@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage("code clone"){
             steps {
-                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Amazik/InsuranceManagement.gitt']])
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Amazik/InsuranceManagement.git']])
             }
         }
         stage("Maven build"){
